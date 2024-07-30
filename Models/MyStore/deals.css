@@ -1,0 +1,289 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header {
+    background-color: #232f3e;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+
+.header .logo h1 {
+    margin: 0;
+}
+
+.header .search-bar input {
+    padding: 7px;
+    width: 325px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.header .search-bar button {
+    padding: 4px;
+    cursor: pointer;
+}
+
+.header .cart a {
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+}
+
+#position {
+    position: sticky;
+    top: 0%;
+}
+
+nav {
+    background-color: #37475a;
+    padding: 20px 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+
+
+nav ul li a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+}
+.deal{
+    text-align: center;
+    color: #37475a;
+}
+.deal span{
+    text-decoration: underline;
+}
+.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.products button{
+    padding: 10px 10px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding:20px;
+    margin: 20px;
+    width: 250px;
+    text-align: center;
+}
+.product h2{
+    text-align: center;
+    padding-right: 30px;
+    font-size: 18px;
+}
+.discount h2{
+    padding-left: 30px;
+    color: #37475a;
+}
+.product p{
+    font-size: 18px;
+}
+.hps {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.hps button{
+    padding: 10px 10px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.hp {
+    border: 1px solid #ccc;
+    padding:20px;
+    margin: 20px;
+    width: 250px;
+    text-align: center;
+}
+.hp h2{
+    text-align: center;
+    padding-right: 30px;
+    font-size: 18px;
+}
+.headphs .headph{
+    padding-left: 30px;
+    color: #37475a;
+    margin-top: 100px;
+}
+.hp p{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.handpic {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.handpic button{
+    padding: 10px 10px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.dec {
+    border: 1px solid #ccc;
+    padding:20px;
+    margin: 20px;
+    width: 250px;
+    text-align: center;
+}
+.dec h2{
+    text-align: center;
+    padding-right: 30px;
+    font-size: 18px;
+}
+.decor .deco{
+    padding-left: 30px;
+    color: #37475a;
+    margin-top: 100px;
+}
+.dec p{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.home {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.home button{
+    padding: 10px 10px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.hoki {
+    border: 1px solid #ccc;
+    padding:20px;
+    margin: 20px;
+    width: 250px;
+    text-align: center;
+}
+.hoki h2{
+    text-align: center;
+    padding-right: 30px;
+    font-size: 18px;
+}
+.lead .led{
+    padding-left: 30px;
+    color: #37475a;
+    margin-top: 100px;
+}
+.hoki p{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.feed{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 22px;
+    margin-bottom: 50px;
+}
+footer * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+footer {
+    background-color: #24262b;
+    padding: 75px;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 20px;
+    line-height: 1.5;
+}
+
+.footer-col h4 {
+    font-size: 20px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '' ;
+    position: absolute;
+    left: 0;
+    bottom: -10;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 20px;
+    color: #ffffff;
+    text-transform: capitalize;
+    font-weight: 300;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 10px;
+}
+
+.footer-col .social-media a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin-right: 10px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-media a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}

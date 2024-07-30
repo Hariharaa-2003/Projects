@@ -1,0 +1,254 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header {
+    background-color: #232f3e;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+
+.header .logo h1 {
+    margin: 0;
+}
+
+.header .search-bar input {
+    padding: 7px;
+    width: 325px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.header .search-bar button {
+    padding: 4px;
+    cursor: pointer;
+}
+
+.header .cart a {
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+}
+
+#position {
+    position: sticky;
+    top: 0%;
+}
+
+nav {
+    background-color: #37475a;
+    padding: 20px 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+
+
+nav ul li a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+}
+
+.image > img {
+    width: 100%;
+}
+
+.intro > p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    word-spacing: 25px;
+    line-height: 40px;
+}
+
+.intro > p::first-letter {
+    color: #2A2F74;
+}
+
+.intro > img {
+    height: 350px;
+    width: 500px;
+    float: left;
+}
+
+.intro > h1 {
+    font-size: 40px;
+    text-decoration: underline;
+    color: #2A2F74;
+}
+
+.content > h2 {
+    font-size: 40px;
+    color: #2A2F74;
+}
+ 
+.content span {
+    text-decoration: underline;
+}
+
+.content > p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    word-spacing: 25px;
+    line-height: 40px;
+}
+
+.chart > h2 {
+    font-size: 36px;
+    color: #2A2F74;
+}
+
+.chart span {
+    text-decoration: underline;
+}
+
+.chart > p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    word-spacing: 25px;
+    line-height: 40px;
+}
+.chart > img{
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.lists > div {
+    padding: 20px 0;
+    text-align: center;
+    margin: 5px 0;
+    font-size: 22px;
+}
+
+.mobiles {
+    background-color: red;
+}
+
+.watch {
+    background-color: royalblue;
+    float: left;
+    width: 25%;
+    height: 200px;
+}
+
+.dress {
+    background-color: blueviolet;
+    float: left;
+    width: 25%;
+    height: 200px;
+}
+
+.foods {
+    background-color: #869133;
+    float: left;
+    width: 25%;
+    height: 200px;
+}
+
+.books {
+    background-color: greenyellow;
+    float: left;
+    width: 25%;
+    height: 200px;
+}
+
+.home {
+    background-color: orangered;
+    clear: both;
+}
+
+footer * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+footer {
+    background-color: #24262b;
+    padding: 75px;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 20px;
+    line-height: 1.5;
+}
+
+.footer-col h4 {
+    font-size: 20px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '' ;
+    position: absolute;
+    left: 0;
+    bottom: -10;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 20px;
+    color: #ffffff;
+    text-transform: capitalize;
+    font-weight: 300;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 10px;
+}
+
+.footer-col .social-media a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin-right: 10px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-media a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+

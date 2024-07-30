@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShowTime - Payment</title>
+    <link rel="stylesheet" href="css/payment.css">
+</head>
+<body>
+    <header>
+        <h1>ShowTime</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="booking.html">Booking</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="paymentOptions">
+            <h2>Select Payment Method</h2>
+            <button class="payment-method" data-method="credit-card">Credit Card</button>
+            <button class="payment-method" data-method="gpay">Google Pay</button>
+            <button class="payment-method" data-method="phonepe">PhonePe</button>
+            <button class="payment-method" data-method="paytm">Paytm</button>
+        </div>
+
+        <div id="paymentForm" style="display: none;">
+            <div id="creditCardForm" style="display: none;">
+                <h3>Credit Card Payment</h3>
+                <label for="cardNumber">Card Number:</label>
+                <input type="text" id="cardNumber" placeholder="Enter your card number">
+                <button id="payWithCard">Pay with Credit Card</button>
+            </div>
+            <div id="gpayForm" style="display: none;">
+                <h3>Google Pay</h3>
+                <label for="pinCodeGpay">PIN Code:</label>
+                <input type="text" id="pinCodeGpay" maxlength="4" placeholder="Enter 4-digit PIN">
+                <button id="payWithGpay">Pay with Google Pay</button>
+            </div>
+            <div id="phonepeForm" style="display: none;">
+                <h3>PhonePe</h3>
+                <label for="pinCodePhonepe">PIN Code:</label>
+                <input type="text" id="pinCodePhonepe" maxlength="4" placeholder="Enter 4-digit PIN">
+                <button id="payWithPhonepe">Pay with PhonePe</button>
+            </div>
+            <div id="paytmForm" style="display: none;">
+                <h3>Paytm</h3>
+                <label for="pinCodePaytm">PIN Code:</label>
+                <input type="text" id="pinCodePaytm" maxlength="5" placeholder="Enter 5-digit PIN">
+                <button id="payWithPaytm">Pay with Paytm</button>
+            </div>
+        </div>
+
+        <div id="bill" style="display: block;">
+            <h2>Bill</h2>
+            <div id="billDetails"></div>
+        </div>
+
+        <div id="ticket" style="display: none;">
+            <h2>Ticket</h2>
+            <div id="ticketDetails"></div>
+            <canvas id="qrCodeCanvas"></canvas>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 ShowTime. All rights reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/qrious/dist/qrious.min.js"></script>
+    <script src="js/payment.js"></script>
+</body>
+</html>
