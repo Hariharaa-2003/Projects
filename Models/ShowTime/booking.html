@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShowTime - Booking</title>
+    <link rel="stylesheet" href="css/booking.css">
+</head>
+<body>
+    <header>
+        <h1>ShowTime</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="booking.html" class="active">Booking</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="size">
+        <h2>Select Location</h2>
+        <div id="locationSelection" class="location-picker">
+            <a href="#" data-location="chennai">Chennai</a>
+            <a href="#" data-location="theni">Theni</a>
+            <a href="#" data-location="madurai">Madurai</a>
+        </div>
+
+        <div class="proceed-btn-container">
+            <button id="proceedToSeats" disabled>Next</button>
+        </div>
+
+        <div id="cinemaSelection" class="cinema-picker">
+            <div id="chennaiCinemas">
+                <a href="#" data-cinema="Sangam Cinemas 4K">Sangam Cinemas 4K</a>
+                <a href="#" data-cinema="Kamala Cinemas">Kamala Cinemas</a>
+                <a href="#" data-cinema="Udhayam Complex">Udhayam Complex</a>
+            </div>
+            <div id="theniCinemas">
+                <a href="#" data-cinema="Vetri Cinemas">Vetri Cinemas</a>
+                <a href="#" data-cinema="Fathuma Cinemas">Fathuma Cinemas</a>
+            </div>
+            <div id="maduraiCinemas">
+                <a href="#" data-cinema="INOX Cinema">INOX Cinema</a>
+                <a href="#" data-cinema="Thangaregal Cinema Hall">Thangaregal Cinema Hall</a>
+            </div>
+        </div>
+
+        <h2>Select Date and Time</h2>
+        <div id="dateTimeSelection">
+            <div class="date-picker">
+                <button class="date-btn" data-date="2024-07-31">July 31, 2024</button>
+                <button class="date-btn" data-date="2024-08-01">August 01, 2024</button>
+                <button class="date-btn" data-date="2024-08-02">August 02, 2024</button>
+            </div>
+            <div id="schedule" class="schedule">
+                <!-- Schedule will be dynamically populated by JavaScript -->
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 ShowTime. All rights reserved.</p>
+    </footer>
+    <script src="js/booking.js"></script>
+</body>
+</html>
